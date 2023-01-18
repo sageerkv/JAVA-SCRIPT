@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*
+{
+	margin: 0;
+ 	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+  	font-style: normal;
+  	font-weight: 300;
+  	font-size: 15px;
+  	background: #eee;
+}
+/* start header */
+.intro{
+	background: #fff;
+   	padding: 60px 30px;
+   	color: #333;
+   	margin-bottom: 15px;
+   	line-height: 1.5;
+   	text-align: center;
+}
+.intro h1 {
+   	font-size: 25pt;
+   	padding-bottom: 5px;
+}
+/* end header */
+
+/* start main */
+main{
+	background: #fff;
+	padding: 20px;
+  }
+#container {
+	text-align: center;
+	padding: 20px;
+}
+#form{
+	margin-top: 20px;
+}
+h5{
+	margin: 25px;
+	font-size: 15px;
+}
+input[type='text'] {
+	padding: 5px 10px;
+	border: 1px solid #00000084;
+	outline: 0;
+	color: #2980b9;
+	font-weight: bold;
+	border-radius: 5px;
+}
+#calbtn {
+	border: 0;
+	padding: 10px 20px;
+	cursor: pointer;
+	background: #000000;
+	color: #ffffff;
+	font-size: 20px;
+	outline: 0;
+	border-radius: 9px;
+}
+#calbtn:hover, #calbtn:active {
+	background-color: #c0392b;
+	outline: 0;
+}
+span {
+	display: inline-block;
+	font-size: 45px;
+	font-weight: bold;
+	color: #27ae60;
+}
+/* end main	 */
