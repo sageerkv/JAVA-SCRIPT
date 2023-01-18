@@ -48,6 +48,7 @@
     transform: translateX(-50%) translateY(-50%);
     color: rgb(0, 0, 0);
     font-size: 50px;
+    font-weight: bold;
     font-family: Orbitron;
     letter-spacing: 7px;
     align-items: center;
