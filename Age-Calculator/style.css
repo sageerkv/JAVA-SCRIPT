@@ -36,6 +36,10 @@ main{
 	text-align: center;
 	padding: 20px;
 }
+img{
+	width: 15rem;
+	height:13rem;
+}
 #form{
 	margin-top: 20px;
 }
