@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+/* header section */
+.header{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    background-color: #805733;
+    text-align: center;  
+    padding: 40px;  
+}
+.h1{
+    background-color: #805733;
+    box-shadow: inset 6px 6px 12px 0 rgba(0, 0, 0, 0.25),
+                inset -2px -2px 4px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* details */
+.info{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1rem;
+}
+ul{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+ul li{
+	list-style:disc;
+	margin-left:40rem;
+	margin-top:10px;
+    float:left;
+}
+
+
+/* calculation */
+#calculator {
+    width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+#calculator form{
+    margin-top: 10rem;
+    background-color: #00000030;
+    padding:1rem;
+}
+label{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+label input{
+    margin-top: 0.8rem;
+}
+input[type="number"]
+ {
+  font-size: 18px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #666;
+  border: 1px solid #000000ad;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+}
+#calculate{
+    margin-top: 2rem;
+    padding:0.2rem;
+    font-size: 1.5rem;
+    border-radius: 2px;
+}
+#result{
+    font-size: 2rem;
+    padding: 2rem;
+    color: red;
+}

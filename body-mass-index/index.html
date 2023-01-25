@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--header section -->
+    <div class="header">
+        <div class="h1"><b>Body mass index</b>
+        </div>
+    </div>
+    
+    <!-- details -->
+    <div class="info">
+        <b>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</b> 
+              <ul>
+                  <li>Enter your weight. Ex -> 75 kg</li>
+                  <li>Enter your Height. Ex -> 1.80 cm</li>
+                  <li>Click calculate</li>
+              </ul>
+      </div>
+
+
+    <!-- calculation -->
+
+    <div id="calculator">
+        <form>
+            <label for="Weight">Weight (kg): <input type="number" id="weight"></label><br>
+            <label for="Height">Height (cm): <input type="number" id="height"></label><br>
+            <button id="calculate" onclick="calculateBMI()">Calculate</button>
+            <p id="result"></p>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
