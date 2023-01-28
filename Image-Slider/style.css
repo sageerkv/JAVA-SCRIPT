@@ -1,0 +1,179 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* slide section */
+.slider-main-container{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.active{
+    display: flex;
+}
+
+/* caption and image section */
+.caption-container,.image-container{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background: #FFF;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caption{
+    width: 70%;
+    margin: auto;
+}
+.caption .header{
+    font-size: 35px;
+    font-family: "Verdana", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin: 15px 0px 30px;
+    text-align: center;
+    padding: 15px;
+}
+.slide.active .caption .header{
+    opacity: 0;
+    animation: caption-animation 3s ease;
+    animation-delay: 0.4s;
+}
+.caption .h1{
+    box-shadow: inset 6px 6px 12px 0 rgba(0, 0, 0, 0.25),
+                inset -2px -2px 4px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 1px;
+    padding: 15px;
+    margin: 10px;
+}
+.slide.active .caption .h1{
+    opacity: 0;
+    animation: caption-animation 3s ease;
+    animation-delay: 0.4s;
+}
+.caption h1{
+    font-size: 25px;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin: 0px;
+}
+.slide.active .caption h1{
+    opacity: 0;
+    animation: caption-animation 3s ease;
+    animation-delay: 0.4s;
+}
+.caption p{
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    margin: 15px 0px 30px;
+    text-align: justify;
+}
+.slide.active .caption p{
+    opacity: 0;
+    animation: caption-animation 3s ease;
+    animation-delay: 0.4s;
+}
+@keyframes caption-animation{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.caption a{
+    font-family: "arial", sans-serif;
+    font-weight: bold;
+    padding: 10px 30px;
+    background: #000;
+    color: #FFF;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 6px;
+}
+.slide.active .caption a{
+    opacity: 0;
+    animation: caption-animation 3s ease;
+    animation-delay: 0.4s;
+}
+.image-container{
+    right: 0px;
+    background:transparent;
+}
+.image-container img{
+    width:646px;
+    height:464px;
+    margin: auto;
+    animation: img-animation 2s ease;
+}
+
+@keyframes img-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* manual section(botton) */
+.controls .prev,
+.controls .next{
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.controls .prev:hover,
+.controls .next:hover{
+    opacity: 0.8;
+}
+.controls .prev{
+    right: 80px;
+}
+.controls .next{
+    right: 40px;
+}
+
+/* indicator section */
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 3;
+}
+.indicator div{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border: 3px solid #000;
+    border-radius: 50%;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+.indicator div.active{
+    background: #fff;
+}
