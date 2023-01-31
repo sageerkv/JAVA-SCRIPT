@@ -178,13 +178,14 @@ body{
     background: #fff;
 }
 
-
+/* DESKTOP VIEW */
 @media only screen and (max-width: 1024px){
     .slider-main-container{
         height: 90vh;
     }
 }
 
+/* LAPTOP VIEW */
 @media only screen and (max-width: 980px){
     .caption-container, .image-container{
         width: 100%;
@@ -202,7 +203,7 @@ body{
     }
 }
 
-
+/* TABLET VIEW */
 @media only screen and (max-width: 650px){
     .caption{
         width: 90%;
@@ -215,6 +216,7 @@ body{
     }
 }
 
+/* MOBILE PHONE VIEW */
 @media only screen and (max-width: 440px){
     .caption{
         width: 95%;
