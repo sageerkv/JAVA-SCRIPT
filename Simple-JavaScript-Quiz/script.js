@@ -86,7 +86,7 @@ function clearStatusClass(element){
 // question section
 const questions = [
     {
-      question: '1. Javascript is an _______ language?',
+      question: '* Javascript is an _______ language?',
       answers: [
         { text: 'Object-oriented', correct: true },
         { text: 'Object-based', correct: false },
@@ -95,7 +95,7 @@ const questions = [
       ]
     },
     {
-      question: '2. Which of the following keywords is used to define a variable in Javascript?',
+      question: '* Which of the following keywords is used to define a variable in Javascript?',
       answers: [
         { text: 'var', correct: false },
         { text: 'let', correct: false },
@@ -104,7 +104,7 @@ const questions = [
       ]
     },
     {
-      question: '3. Which of the following methods is used to access HTML elements using Javascript?',
+      question: '* Which of the following methods is used to access HTML elements using Javascript?',
       answers: [
         { text: 'getElementById()', correct: false },
         { text: 'getElementsByClassName()', correct: false },
@@ -113,7 +113,7 @@ const questions = [
       ]
     },
     {
-      question: '4. Upon encountering empty statements, what does the Javascript Interpreter do?',
+      question: '* Upon encountering empty statements, what does the Javascript Interpreter do?',
       answers: [
         { text: 'Throws an error', correct: false },
         { text: 'Ignores the statements', correct: true },
