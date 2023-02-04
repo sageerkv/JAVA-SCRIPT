@@ -12,19 +12,22 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 })
 
+// start section
 function startGame(){
     startButton.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide');
     setNextQuestion()
 }
 
+// next sextion
 function setNextQuestion(){
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
+// question section
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -39,6 +42,7 @@ function showQuestion(question) {
     })
 }
 
+// restart section
 function resetState(){
     clearStatusClass(document.body)
     nextButton.classList.add('hide');
@@ -47,6 +51,7 @@ function resetState(){
     }
 }
 
+// answer section
 function selectAnswer(e){
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
@@ -62,6 +67,7 @@ function selectAnswer(e){
     }
 }
 
+// evaluate section
 function setStatusClass(element, correct){
     clearStatusClass(element)
     if (correct){
@@ -71,42 +77,48 @@ function setStatusClass(element, correct){
     }
 }
 
+// clear section
 function clearStatusClass(element){
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
 
+// question section
 const questions = [
     {
-      question: 'What is 2 + 2?',
+      question: '1. Javascript is an _______ language?',
       answers: [
-        { text: '4', correct: true },
-        { text: '22', correct: false }
+        { text: 'Object-oriented', correct: true },
+        { text: 'Object-based', correct: false },
+        { text: 'Procedural', correct: false },
+        { text: 'None of the above', correct: false }
       ]
     },
     {
-      question: 'Who is the best YouTuber?',
+      question: '2. Which of the following keywords is used to define a variable in Javascript?',
       answers: [
-        { text: 'Web Dev Simplified', correct: true },
-        { text: 'Traversy Media', correct: false },
-        { text: 'Dev Ed', correct: false},
-        { text: 'Fun Fun Function', correct: false }
+        { text: 'var', correct: false },
+        { text: 'let', correct: false },
+        { text: 'Both A and B', correct: true},
+        { text: 'None of the above', correct: false }
       ]
     },
     {
-      question: 'Is web development fun?',
+      question: '3. Which of the following methods is used to access HTML elements using Javascript?',
       answers: [
-        { text: 'Kinda', correct: false },
-        { text: 'YES!!!', correct: true },
-        { text: 'Um no', correct: false },
-        { text: 'IDK', correct: false }
+        { text: 'getElementById()', correct: false },
+        { text: 'getElementsByClassName()', correct: false },
+        { text: 'Both A and B', correct: true },
+        { text: 'None of the above', correct: false }
       ]
     },
     {
-      question: 'What is 4 * 2?',
+      question: '4. Upon encountering empty statements, what does the Javascript Interpreter do?',
       answers: [
-        { text: '6', correct: false },
-        { text: '8', correct: true }
+        { text: 'Throws an error', correct: false },
+        { text: 'Ignores the statements', correct: true },
+        { text: 'Gives a warning', correct: false },
+        { text: 'None of the above', correct: false }
       ]
     }
   ]
