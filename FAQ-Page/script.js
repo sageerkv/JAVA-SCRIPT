@@ -1,7 +1,7 @@
 const questions = document.querySelectorAll('.question');
 
 questions.forEach((question) => {
-  const btn = question.querySelector('h2');
+  const btn = question.querySelector('.faq-plus');
   const answer = question.querySelector('.answer');
 
   btn.addEventListener('click', () => {
