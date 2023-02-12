@@ -38,15 +38,27 @@ h1{
     width: 75%;
     margin: 0 auto;
 }
-.faq-plus{
+#faq-plus{
     float: right;
     font-size: 1em;
     line-height: 1em;
 }
-.faq-plus:hover{
+#faq-pluss{
+    float: right;
+    font-size: 1em;
+    line-height: 1em;
+}
+#faq-minus{
+    float: right;
+    font-size: 1em;
+    line-height: 1em;
+}
+#faq-plus:hover{
     color: #9b9b9b  ;
 }
-
+#faq-minus:hover{
+    color: #9b9b9b  ;
+}
 .question h2 {
     cursor: pointer;
 }
