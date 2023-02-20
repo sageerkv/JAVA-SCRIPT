@@ -10,6 +10,8 @@ body {
     position: relative;
     background-size: cover;
 }
+
+/* navbar */
 .navbar {
     width: 88%;
     margin: auto;
@@ -33,10 +35,12 @@ body {
 .navbar a:hover{
     color: red;
 }
+
+/* content */
 .content{
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 22%;
 }
 .left-col{
     margin-left: 6%;
@@ -54,23 +58,41 @@ body {
     color: #fff;
     line-height: 70px;
 }
+
+/* music section */
 .right-col{
     float: right;
-    margin-right: 6%;
-    margin-top: 120px;
+    margin-right: 12%;
+    margin-top: 75px;
     display: flex;
     align-items: center;
 }
-.right-col p{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-right: 15px;
+.card{
+    background-color: #ffffff72;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 450px;
+    text-align: center;
+    padding-bottom: 20px;
 }
-#icon{
-    width: 80px;
+.card img{
+    max-width: 285px;
+    height: 180px;
+    border-radius:5px 5px 0 0;
+    text-align: center;
+}
+.card h3{
+    font-size: 2rem;
+}
+.card p{
+    font-size: 1rem;    
+}
+.btns img{
+    width: 50px;
     cursor: pointer;
+    height: 50px;
 }
-.right-col img:hover{
+.btns img:hover{
     filter: opacity(0.5);
 }
+
