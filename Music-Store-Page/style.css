@@ -62,35 +62,47 @@ body {
 /* music section */
 .right-col{
     float: right;
-    margin-right: 12%;
-    margin-top: 75px;
+    margin-right: 10%;
+    margin-top: 30px;
     display: flex;
     align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    padding:0 40px 20px;
 }
-.card{
-    background-color: #ffffff72;
-    box-sizing: border-box;
-    border-radius: 5px;
-    max-width: 450px;
-    text-align: center;
-    padding-bottom: 20px;
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    color: #fff;
+  }
+   
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: URL(media/ludo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
 }
-.card img{
-    max-width: 285px;
-    height: 180px;
-    border-radius:5px 5px 0 0;
-    text-align: center;
+.now-playing {
+    font-size: 1rem;
 }
-.card h3{
-    font-size: 2rem;
+   
+.track-name {
+    font-size: 3rem;
 }
-.card p{
-    font-size: 1rem;    
+   
+.track-artist {
+    font-size: 1.5rem;
 }
 .btns img{
-    width: 50px;
+    width: 40px;
     cursor: pointer;
-    height: 50px;
+    height: 40px;
+    margin-top: 15px;
 }
 .btns img:hover{
     filter: opacity(0.5);
