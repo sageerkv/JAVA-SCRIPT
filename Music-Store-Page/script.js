@@ -91,7 +91,7 @@ function playTrack() {
     isPlaying = true;
         
     // Replace icon with the pause icon
-    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-3x"></i>';
     }
         
 function pauseTrack() {
